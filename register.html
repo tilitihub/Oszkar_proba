@@ -1,0 +1,33 @@
+<!-- Visual access of registration -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>register page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="form">
+      <h1>New User</h1>
+      <!-- Connecting to PHP backend. -->
+      <form name="form" action="register.php" method="POST">
+        <p>
+          <label for="username"> NEW USER NAME: </label>
+          <input type="text" name="user_name" id="username">
+        </p>
+        <p>
+          <label for="password"> NEW PASSWORD: </label>
+          <input type="text" id="password" name="pass_word" >
+        </p>
+        <p>
+          <!-- Takes in two passwords for comparisons -->
+          <label for="password">RE ENTER PASSWORD:</label>
+          <input type="text" id="password1" name="pass_word1">
+        </p>
+        <p>
+          <input type="submit" id="button" value="register" >
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

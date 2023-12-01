@@ -1,0 +1,31 @@
+<!-- Please open this file first! This is the login page. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <div id="form">
+      <h1>Welcome to RevMixer</h1>
+      <!-- verifyLogin connects inputs to MySQL to confirm successful login -->
+      <form name="form" action="verifyLogin.php" method="POST">
+        <p>
+          <label> USER NAME: </label>
+          <input type="text" id="userid" name="userid" required>
+        </p>
+        <p>
+          <label> PASSWORD: </label>
+          <input type="text" id="password" name="password" required>
+        </p>
+
+        <p>
+          <input type="submit" id="button" value="Login" />
+        </p>
+      </form>
+      <!-- No account? Registration Page -->
+      <a href="register.html">Not Registered? Click here!</a>
+    </div>
+  </body>
+</html>
